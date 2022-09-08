@@ -1,12 +1,7 @@
-function setup() {
-    createCanvas(windowWidth, windowHeight);
-}
+const logo = document.querySelectorAll('#ETH-logo path');
 
-function draw() {
-    background(255);
-    text("put your p5.js code here",10, frameCount % height);
-}
+// console.log(logo);
 
-function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+for (let i=0; i<logo.length; i++) {
+    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
 }
