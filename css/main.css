@@ -5,27 +5,93 @@
 }
 
 body {
-  background-color: #4F4F4F;
+  background-color: rgb(32, 35, 48);
   width: 100%;
   height: 100vh;
 }
 
-#ETH-logo {
+#ethereum {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* most genius way of centering things I've seen thus far!! */
 }
-
-#ETH-logo path {
-  stroke-dasharray: 535px;
-  stroke-dashoffset: 535px;
-  animation: line-anim 2s forwards;
+#electro-dollar {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  align-items: center;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 35px;
+  font-family: 'Poppins';
+  color: #FFF;
+  animation: fadein 3s ease forwards 1.0s;
+}
+/* Unknown */
+#ethereum path:nth-child(1) {
+  stroke-dasharray: 0px;
+}
+/* Letter E */
+#ethereum path:nth-child(2) {
+  stroke-dasharray: 310;
+  stroke-dashoffset: 310;
+  animation: line-animation 2s ease forwards;
+}
+/* Letter T */
+#ethereum path:nth-child(3) {
+  stroke-dasharray: 310;
+  stroke-dashoffset: 310;
+  animation: line-animation 2s ease forwards 0.3s;
+}
+/* Letter H */
+#ethereum path:nth-child(4) {
+  stroke-dasharray: 357;
+  stroke-dashoffset: 357;
+  animation: line-animation 2s ease forwards 1.3s;
+}
+/* Letter E */
+#ethereum path:nth-child(5) {
+  stroke-dasharray: 310;
+  stroke-dashoffset: 310;
+  animation: line-animation 2s ease forwards 2.0s;
+}
+/* Letter R */
+#ethereum path:nth-child(6) {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  animation: line-animation 2s ease forwards 2.3s;
+}
+/* Letter E */
+#ethereum path:nth-child(7) {
+  stroke-dasharray: 310;
+  stroke-dashoffset: 310;
+  animation: line-animation 2s ease forwards 2.6s;
+}
+/* Letter U */
+#ethereum path:nth-child(8) {
+  stroke-dasharray: 325;
+  stroke-dashoffset: 325;
+  animation: line-animation 2s ease forwards 3.5s;
+}
+/* Letter M */
+#ethereum path:nth-child(9) {
+  stroke-dasharray: 505;
+  stroke-dashoffset: 505;
+  animation: line-animation 2s ease forwards 3.5s;
 }
 
-@keyframes line-anim {
+@keyframes line-animation {
   to {
     stroke-dashoffset: 0;
   }
 }
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
