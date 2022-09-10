@@ -37,7 +37,7 @@ body {
   font-size: 15px;
   font-family: 'Poppins';
   color: #FFF;
-  animation: fadein 3s ease forwards 1.0s;
+  animation: fadein 3s ease forwards 4.5s;
 }
 /* Unknown */
 #ethereum path:nth-child(1) {
