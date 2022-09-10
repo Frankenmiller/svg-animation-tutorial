@@ -12,23 +12,32 @@ body {
 
 #ethereum {
   position: absolute;
-  top: 50%;
+  width: 50%;
+  align-items: center;
+  top: 25%;
   left: 50%;
+  transform: scale(50%);
+  margin-left: auto;
+  margin-right: auto;
   transform: translate(-50%, -50%);
+  -- max-height: 30px;
   /* most genius way of centering things I've seen thus far!! */
 }
 #electro-dollar {
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
-  top: 65%;
+  top: 30%;
   left: 50%;
+  width: 50%;
   align-items: center;
   opacity: 0;
   transform: translate(-50%, -50%);
   white-space: nowrap;
-  font-size: 35px;
+  font-size: 15px;
   font-family: 'Poppins';
   color: #FFF;
-  animation: fadein 3s ease forwards 4.0s;
+  animation: fadein 3s ease forwards 1.0s;
 }
 /* Unknown */
 #ethereum path:nth-child(1) {
@@ -93,5 +102,57 @@ body {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+@media only screen and (min-width: 819px) {
+  #ethereum {
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+    transform: scale(80%);
+    /* most genius way of centering things I've seen thus far!! */
+  }
+  #electro-dollar {
+    margin-left: auto;
+    margin-right: auto;
+    top: 35%;
+    left: 50%;
+    width: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 31px;
+  }
+  
+}
+
+@media only screen and (min-width: 1000px) {
+  #ethereum {
+    width: 50%;
+    top: 25%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+    transform: scale(100%);
+    /* most genius way of centering things I've seen thus far!! */
+  }
+  #electro-dollar {
+    margin-left: auto;
+    margin-right: auto;
+    top: 32%;
+    left: 50%;
+    width: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 31px;
+  }
+  
+}
+
+
 
 
